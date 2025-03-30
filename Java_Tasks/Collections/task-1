@@ -1,0 +1,99 @@
+import java.util.*;
+class VectorThread extends Thread {
+    public static void main(String[] args) {
+        List<Integer> list = new Vector<>();
+        list.add(3);
+        list.add(1);
+        list.add(2);
+        list.add(4);
+        list.add(5);
+        // System.out.println("Is list empty? "+list.isEmpty());
+        // System.out.println("The given list is:"+list1);
+        System.out.println("Number of elements in the list: " + list.size());
+        // Adding one element
+        list.add(12);
+        System.out.println("After adding one element:");
+        System.out.println("The given list is :" + list);
+        System.out.println("The number of elements in the list: " + list.size());
+        // Checking for an element
+        System.out.println("Is 566 available in the list:" + list.contains(566));
+        System.out.println("The given list before removing elements is :" + list);
+
+        list.remove(2);// Removing element by its index
+        list.remove(3);// Removing element by its index
+        System.out.println("After removing elements:");
+        System.out.println("The given list is :" + list);
+        System.out.println("The number of elements in the list: " + list.size());
+
+    }
+}
+
+class LinkedListThread extends Thread{
+    public void run(){
+        List<Integer> list = new LinkedList<>();
+
+        list.add(3);
+        list.add(1);
+        list.add(2);
+        list.add(4);
+        list.add(5);
+
+        // System.out.println("Is list empty? "+list.isEmpty());
+        // System.out.println("The given list is:"+list1);
+        System.out.println("Number of elements in the list: " + list.size());
+        // Adding one element
+        list.add(12);
+        System.out.println("After adding one element:");
+        System.out.println("The given list is :" + list);
+        System.out.println("The number of elements in the list: " + list.size());
+        // Checking for an element
+        System.out.println("Is 566 available in the list:" + list.contains(566));
+        System.out.println("The given list before removing elements is :" + list);
+
+        list.remove(2);// Removing element by its index
+        list.remove(3);// Removing element by its index
+        System.out.println("After removing elements:");
+        System.out.println("The given list is :" + list);
+        System.out.println("The number of elements in the list: " + list.size());
+    }
+}
+class StackThread extends Thread{
+    public void run(){
+        List<Integer> list = new Stack<>();
+
+        list.add(3);
+        list.add(1);
+        list.add(2);
+        list.add(4);
+        list.add(5);
+
+        // System.out.println("Is list empty? "+list.isEmpty());
+        // System.out.println("The given list is:"+list1);
+        System.out.println("Number of elements in the list: " + list.size());
+        // Adding one element
+        list.add(12);
+        System.out.println("After adding one element:");
+        System.out.println("The given list is :" + list);
+        System.out.println("The number of elements in the list: " + list.size());
+        // Checking for an element
+        System.out.println("Is 566 available in the list:" + list.contains(566));
+        System.out.println("The given list before removing elements is :" + list);
+
+        list.remove(2);// Removing element by its index
+        list.remove(3);// Removing element by its index
+        System.out.println("After removing elements:");
+        System.out.println("The given list is :" + list);
+        System.out.println("The number of elements in the list: " + list.size());
+    }
+}
+public class CollectionThread{
+    public static void main(String[] args) {
+        
+        LinkedListThread tt1 = new LinkedListThread();
+        tt1.start();
+        VectorThread tt2=new VectorThread();
+        tt2.start();
+        StackThread tt3=new StackThread();
+        tt3.start();
+    }
+}

@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    background-color: #e9ecef; /* Light grey background */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+  }
+  
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h1, h2, h5 {
+    color: #343a40; /* Dark grey color for headings */
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa; /* Light grey background for list items */
+    border: 1px solid #dee2e6; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .list-group-item:hover {
+    background-color: #e2e6ea; /* Slightly darker background on hover */
+  }
+  
+  .form-label {
+    font-weight: bold; /* Bold labels for form inputs */
+    color: #495057; /* Medium grey color */
+  }
+  
+  .form-control {
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Blue background for the primary button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+  }
+  
+  .mt-3 {
+    margin-top: 20px;
+  }
+  
+  .mb-3 {
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #ffffff; /* White text */
+  }
+  
+  .alert-danger {
+    background-color: #dc3545; /* Red background for error alert */
+  }
+  

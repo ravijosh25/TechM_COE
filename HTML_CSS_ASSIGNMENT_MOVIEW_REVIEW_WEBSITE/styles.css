@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #bec09b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    background-color: #d7cf30;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+button {
+    background-color: #8dbd40;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b9c74a;
+}
+
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.movie {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(103, 174, 15, 0.3);
+    margin: 20px;
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.movie h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+
+.movie p {
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+
+.feedback-container {
+    margin: 20px;
+}
+
+
+.review {
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 87, 51, 0.3);
+    margin: 10px;
+    padding: 15px;
+    color: #e0e0e0;
+}
+
+.review strong {
+    color: #ffd700;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form input, form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+}
+
+form button {
+    background-color: #dcea65;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #bdce3c;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 25px; 
+    border: 1px solid #ffcc00; 
+    background-color: #2e2e2e; 
+    color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out; 
+}
+
+
+#searchInput:focus {
+    outline: none;
+    border-color: #ff5733;
+    box-shadow: 0 4px 8px rgba(255, 87, 51, 0.3); 
+}
+
+
+#searchInput::placeholder {
+    color: #888; 
+}

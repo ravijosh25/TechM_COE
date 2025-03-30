@@ -1,0 +1,19 @@
+class ThreadTwo extends Thread {
+    public void run() {
+        System.out.println("From ThreadTwo!");
+        System.out.println("From ThreadTwo!");
+        System.out.println(10 / 0); // Will cause ArithmeticException
+    }
+}
+
+public class Threadtwo {
+    public static void main(String[] args) {
+        ThreadTwo t1 = new ThreadTwo();
+        ThreadTwo t2 = new ThreadTwo();
+
+        t1.run();
+        t2.run();
+
+
+    }
+}

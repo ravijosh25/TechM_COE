@@ -1,0 +1,17 @@
+public class Driver {
+    public static void main(String[] args) {
+        Thread T1 = new Thread(new RTask5ThreadRunnableTwo());
+        T1.start();
+        Thread T2 = new Thread(new RTask5ThreadRunnableTwo());
+        T2.start();
+
+    }
+}
+
+class RTask5ThreadRunnableTwo implements Runnable {
+    public void run() {
+        System.out.println("From RTask5ThreadRunnableTwo");
+        System.out.println("From RTask5ThreadRunnableTwo");
+        System.out.println("From RTask5ThreadRunnableTwo");
+    }
+}

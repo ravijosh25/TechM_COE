@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Movie Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📽️ Telugu Cinema Reviews</h1>
+        <button onclick="navigateHome()">🏡Back to Home</button>
+    </header>
+
+    <main id="filmDetails" class="movie-container">
+       
+    </main>
+
+    <section>
+        <h2>Audience Reviews</h2>
+        <div id="feedback" class="feedback-container"></div>
+    </section>
+
+    <section>
+        <h3>Submit a Review</h3>
+        <form id="feedbackForm">
+            <input type="text" id="userName" placeholder="Enter your name" required>
+            <textarea id="userReview" placeholder="Type your review here..." required></textarea>
+            <button type="submit">Post Review</button>
+        </form>
+    </section>
+
+    <script src="movie.js"></script>
+</body>
+</html>

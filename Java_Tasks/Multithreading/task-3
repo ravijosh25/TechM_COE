@@ -1,0 +1,19 @@
+public class Driver {
+    public static void main(String[] args) {
+        RTask3ThreadThree t1 = new RTask3ThreadThree();
+        t1.start();
+        RTask3ThreadThree t2 = new RTask3ThreadThree();
+        t2.start();
+        RTask3ThreadThree t3 = new RTask3ThreadThree();
+        t3.start();
+    }
+}
+class RTask3ThreadThree extends Thread{
+    public void run(){
+        System.out.println("From RTask3ThreadThree");
+        System.out.println("From RTask3ThreadThree");
+        System.out.println("From RTask3ThreadThree");
+        System.out.println("From RTask3ThreadThree");
+        System.out.println("From RTask3ThreadThree ");
+    }
+}
